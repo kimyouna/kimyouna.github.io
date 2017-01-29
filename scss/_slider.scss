@@ -1,0 +1,103 @@
+/*-----------------------------
+	4. Slyder Style
+-------------------------------*/
+.tp-bannertimer {
+	display: none !important;
+}
+.slider-catagory{
+	text-align: right;
+	text-transform: uppercase;
+	font-weight: $font_normal !important;
+	letter-spacing: 1.4px !important;
+	color: $primary_color !important;
+}
+.slider-title{
+	text-align: right;
+	font-weight: $font_bold !important;
+	color: $primary_color !important;
+}
+.slider-btn{
+	text-align: right;
+	.read-more-two{
+		transition: auto !important;
+		webkit-transition: 0.3s ease-in !important;
+		-o-transition: 0.3s ease-in !important;
+		transition: 0.3s ease-in !important;
+	}
+}
+.slider-common{
+	.tparrows{
+		cursor: pointer;
+		background: transparent;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		display: block;
+		z-index: 100;
+		border: 1px solid #bababa;
+		@include radius-border(50%);
+		webkit-transition: 0.3s ease-in !important;
+		-o-transition: 0.3s ease-in !important;
+		transition: 0.3s ease-in !important;
+		&:before {
+			font-family: 'FontAwesome';
+			font-size: 20px;
+			color: #bababa;
+			display: block;
+			line-height: 38px;
+			text-align: center;
+			webkit-transition: 0.3s ease-in !important;
+			-o-transition: 0.3s ease-in !important;
+			transition: 0.3s ease-in !important;
+		}
+		
+		&:hover,&:hover:before{
+			border-color: rgba(0,0,0,.4);
+			color: rgba(0,0,0,.7);
+		}
+	}
+	.tparrows.tp-leftarrow:before {
+		content: "\f104";
+	}
+	.tparrows.tp-rightarrow:before {
+		content: "\f105";
+	}
+}
+
+
+
+.slider-style-two{
+	.slider-catagory{
+		text-align: left;
+		color: $white_color !important;
+		a:hover{
+			color: $white_color !important;
+		}
+	}
+	.slider-title{
+		text-align: left;
+		color: $white_color !important;
+	}
+	.slider-btn{
+		text-align: left;
+		.read-more-two{
+			transition: auto !important;
+			webkit-transition: 0.3s ease-in !important;
+			-o-transition: 0.3s ease-in !important;
+			transition: 0.3s ease-in !important;
+			color: $white_color !important;
+			border-color: $white_color !important;
+		}
+	}
+	.tparrows{
+		border: 1px solid #fff;
+		&:before {
+			color: #fff;
+		}
+		
+		&:hover,&:hover:before{
+			border-color: #f0f0f0;
+			color: #f0f0f0;
+		}
+	}
+}	

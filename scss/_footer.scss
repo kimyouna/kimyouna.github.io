@@ -1,0 +1,38 @@
+
+/*-------------------------
+	12. Footer Styles
+-------------------------*/
+
+.footer-main-section{
+	padding-top: 90px;
+	padding-bottom: 70px;
+}
+.footer-widget .widget-about-content{
+	padding: 0 50px;
+	p{
+		margin-bottom: 0;
+	}
+}
+.footer-widget .widget_popular_post{
+	padding: 0 60px 0 0;
+}
+.footer-widget .widget_pinterest_post ul li{
+	display: inline-block;
+	margin: 5px 4px;
+}
+.footer-bottom{
+	padding: 25px 0;
+}
+.copyright p{
+	margin: 0;
+	letter-spacing: 1.2px;
+	font-size: 12px;
+	color: #cec8c8;
+	span{
+		color: $deep_gray;
+	}
+	a{
+		color: $lite_blue;
+	}
+	
+}

@@ -1,0 +1,234 @@
+
+/*-------------------------
+	2. Header Styles
+-------------------------*/
+/*----------------- HEADER ONE AND COMMON -----------------*/
+.navbar-default{
+	background: #fff;
+	box-shadow: none;
+	border: none;
+	padding-top: 35px;
+    padding-bottom: 35px;
+	margin-bottom: 0;
+	border-bottom: 1px solid transparent;
+	@include transition(0.3s);
+	.navbar-nav > .active > a{
+		background: none;
+		box-shadow: none;
+		color: $white_color;
+		&:after{
+			width: 100%;
+			background: $lite_blue;
+		}
+	}
+	.navbar-nav > li > a{
+		margin-right: 12px;
+		text-shadow: none;
+		font-size: 14px;
+		color: $primary_color;
+		padding: 10px 18px;
+		position: relative;
+		@include transition(0.3s);
+		&:hover{
+			color: $lite_blue;
+		}
+	}
+	.navbar-nav > li:last-child > a{
+		margin-right: 0;
+		padding-right: 0;
+	}
+	.navbar-nav > li.has-sub-menu > a{
+			margin-right: 30px;
+			&:after{
+				content: "\f107";
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				font-size: 14px;
+				color: $deep_gray;
+				transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				font-family: 'FontAwesome';
+				@include transition(0.3s);
+			}
+			&:hover:after{
+				color: $lite_blue;
+			}
+		}
+	.navbar-brand{
+		padding: 8px 15px;
+		margin-top: -25px;
+	}
+}
+.is-sticky {
+	.navbar-default{
+		background: rgba(255,255,255,1);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		-webkit-box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.075 );
+		-moz-box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.075 );
+		box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.075 );
+		-webkit-animation: headerFloating 0.8s 1;
+		animation: headerFloating 0.8s 1;
+	}
+	.navbar-brand{
+		padding: 8px 15px;
+		margin-top: -25px;
+	}
+	.header-two {
+		.nav-logo-defult {
+			opacity: 0;
+			visibility: hidden;
+		}
+		.nav-logo-small {
+			opacity: 1;
+		}
+	}
+	.header-common {
+		width: 100%;
+		z-index: 9999;
+	}
+	.header-three .navbar-default .navbar-collapse {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border: transparent;
+	}
+}
+/*----------------------
+	child-menu
+------------------------*/
+.navbar-default{
+	.has-sub-menu {
+		ul{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background: rgba(0, 0, 0, .9);
+		}
+		position: relative;
+		.sub-menu {
+			position: absolute;
+			top:100%;
+			left: 0;
+			padding-left: 0;
+			list-style: none;
+			z-index: 9999;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(50px);
+			transition: all 0.4s ease-in-out;
+		}
+		&:hover > .sub-menu{
+			transform: translateY(0);
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.sub-menu li{
+		width: 150px;  
+		padding: 0;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
+	.sub-menu a{
+		display: inline-block;
+		width: 100%;
+		color: #8c8c8c;
+		font-size: 11px;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		text-decoration: none; 
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			color: rgba(255,255,255,0.8);
+		}
+	}
+	.sub-menu .has-sub-menu:before{
+		color: #8c8c8c;;
+		position: absolute;
+		content: "\f105";
+		font-family: "FontAwesome";
+		top: 14px;
+		right: 22px;
+	}
+	.has-sub-menu:hover:before {
+		color: $lite_blue;
+	}
+	.sub-menu .sub-menu{
+		left: 100%;
+		top: 0;
+	}
+}
+.navbar-nav .has-sub-menu button{
+	display: none;
+}
+
+/*----------------- HEADER TWO -----------------*/
+
+.header-two{
+	.navbar-brand{
+		display: none;
+	}
+	.navbar-collapse{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.navbar-right{
+		margin-right: 0;
+	}
+	.navbar-nav.navbar-left > li:first-child > a{
+		padding-left: 0;
+	}
+	.navbar-nav.navbar-left > li:last-child > a{
+		padding-right: 18px;
+	}
+	/* nav-bar nav-logo */
+	.nav-logo-defult {
+		position: absolute;
+		z-index: 100;
+		left: 50%;
+		top: 15px;
+		opacity: 1;
+		margin-left: -100px;
+		transition: all 0.3s ease-in;
+	}
+	.nav-logo-small {
+		position: absolute;
+		z-index: 5;
+		left: 50%;
+		top: 16px;
+		margin-left: -80px;
+		opacity: 0;
+		transition: all 0.3s ease-in;
+	}
+}
+/*----------------- HEADER THREE -----------------*/
+.header-three{
+	.navbar-brand{
+		display: none;
+	}
+	.navbar-default{
+		padding-top: 0;
+		padding-bottom: 0;
+		min-height: auto;
+		.navbar-collapse{
+			padding-top: 30px;
+			padding-bottom: 30px;
+			border-top: 1px solid $primary_border_clr;
+			border-bottom: 1px solid $primary_border_clr;
+			@include transition(0.4s);
+		}
+	}
+	.navbar-nav>li {
+		float: none;
+		display: inline-block;
+	}
+	.navbar-nav {
+		float: none;
+		text-align: center;
+		margin: 0 auto; 
+	}
+	.sub-menu>li>a{
+		text-align: left;
+	}
+}

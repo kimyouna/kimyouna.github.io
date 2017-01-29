@@ -1,0 +1,136 @@
+
+/*-----------------------------
+	6. Sidebar Style
+-------------------------------*/
+.widget{
+	padding: 55px 55px;
+}
+.widget-title{
+	margin-bottom: 42px;
+}
+.widget-title h4,
+.widget-about-content h4{
+	font-weight: $font_bold;
+	color: $primary_color;
+}
+.widget-about-thumb img{
+	display: inline-block;
+	margin-bottom: 30px;
+}
+.widget-about-content h4{
+	margin-bottom: 8px;
+}
+.widget-about-content h6{
+	font-size: 16px;
+	color: $deep_gray;
+	margin-bottom: 20px;
+	font-weight: $font_normal;
+}
+.widget_social ul {
+	font-size: 0;
+}
+.widget_social ul li{
+	margin-right: 12px;
+}
+.widget_social ul li:last-child{
+	margin-right: 0;
+}
+.widget_social ul li a{
+	height: 31px;
+	width: 31px;
+	background: #f2f2f2;
+	@include radius-border(50%);
+	
+}
+.widget_social ul li a i.fa{
+	color: #7d7d7d;
+	line-height: 31px;
+	font-size: 13px;
+	@include transition(0.3s);
+	&:hover{
+		color: $primary_color;
+	}
+}
+
+.widget_popular_post ul li .widget-img {
+  float: left;
+}
+.widget_popular_post ul li {
+  display: table;
+  margin-bottom: 30px;
+}
+.widget_popular_post ul li:last-child{
+	margin-bottom: 0;
+}
+.widget_popular_post .widget-content {
+	text-align: left;
+	padding-left: 15px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.widget_popular_post .widget-content h6 a{
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	color: $primary_color;
+	font-weight: $font_bold; 
+}
+.widget_popular_post .widget-content p{
+	line-height: 15px;
+	margin-bottom: 0;
+}
+.widget-img{
+	position: relative;
+}
+.widget_tags ul{
+	font-size: 0;
+}
+.widget_tags ul li a{
+	font-size: 12px;
+	height: 30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	line-height: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	color: $deep_gray;
+	background: #f4f4f4;
+	@include transition(0.3s);
+	&:hover{
+		color: $primary_color;
+	}
+}
+
+.widget_categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget_categories ul li {
+  line-height: 35px;
+  font-size: 13px;
+}
+
+.widget_categories ul li:hover a, 
+.widget_categories ul li:hover span {
+  color: $primary_color;
+}
+.widget_categories ul li:last-child {
+  border-bottom: none;
+}
+.widget_categories ul li a,
+.widget_categories ul li span {
+  color: $deep_gray;
+  font-size: 13px;
+  @include transition(0.3s);
+}
+.widget_categories ul li a{
+	float: left;
+}
+.widget_categories ul li span {
+  float: right;
+  color: #878787;
+  @include transition(0.3s);
+}

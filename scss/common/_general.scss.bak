@@ -1,0 +1,218 @@
+
+/*-------------------------
+	1 - General Styles
+-------------------------*/
+
+@font-face {
+  font-family: 'SF-UI';
+  src: url('../fonts/SF-UI-Display-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/SF-UI-Display-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/SF-UI-Display-Light.otf') format('opentype');
+}
+
+html, html a {
+    text-rendering: optimizeLegibility !important;
+ 	-webkit-font-smoothing: antialiased !important;
+}
+body {
+	font-family: $SF-UI_font;
+	font-weight: $font_normal;
+	font-size: $base_font_size;
+	line-height: 100%;
+	letter-spacing: 0;
+	background: $body_bg;
+	color: $primary_color
+}
+
+p {
+	line-height: $base_line_height;
+	font-size: $base_font_size;
+	letter-spacing: 0.65px;
+	margin-bottom: 30px;
+	font-weight: $font_light;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $Montserrat_font;
+	margin: 0;
+	padding: 0;
+	line-height: 100%;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+
+span, i, strong {
+	display: inline-block;
+}
+
+img {
+	object-fit: cover;
+	display: inline-block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+	
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $primary_color;
+		outline: 0;
+	}
+	@include transition(0.4s);
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+iframe {
+    border: 0;
+}
+.ps-rel{
+	position: relative;
+}
+.section-padding{
+	padding: $section_padd;
+}
+.section-padding.style-two{
+	padding: $section_padd_two;
+}
+.section-padding.style-three{
+	padding: $section_padd_three;
+}
+.heading-text-center {
+	text-align: center;
+}
+.heading-text-left {
+    text-align: left;
+}
+.heading-text-right {
+    text-align: right;
+}
+.m-bottom-30 {
+	margin-bottom: 30px;
+}
+.m-top-70 {
+	margin-top: 70px;
+}
+.background-property {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+.inline-list li{
+	list-style: none;
+	display: inline-block;
+}
+.overlay-common{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	@include background-opacity(#000,0.47s);
+}
+.read-more-one{
+	font-size: 12px;
+	color: $lite_blue;
+	text-transform: uppercase;
+	font-weight: $font_normal;
+	@include transition(0.3s);
+	&:hover{
+		color: $lite_blue_hvr;
+	}
+}
+.read-more-two{
+	height: 30px;
+	line-height: 30px;
+	letter-spacing: 1.3px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-weight: $font_normal;
+	color: $primary_color;
+	border: 1px solid $lite_blue;
+	@include transition(0.3s);
+	&:hover{
+		color: $lite_blue;
+	}
+}
+.social-solid li{
+	margin-right: 18px;
+	line-height: 30px;
+	&:last-child{
+		margin-right: 0;
+	}
+	a{
+		font-size: 13px;
+		color: #acacac;
+		&:hover{
+			color: $primary_color;
+		}
+	}
+	
+}
+/*------------ FONTS-GROUPING ------------*/
+.read-more-one,
+.widget_tags ul li a,
+.widget_categories ul li a,
+.carousel-instagram .instagram-info span,
+.copyright p,
+.pagination,.post-catagory-area span a,
+.post-share-area .widget_popular_tag ul li a,
+.single-post-author .post-author-info h5,
+.comment-form-area .comment-form input[type="text"],
+ .comment-form-area .comment-form input[type="email"],
+ .comment-form-area .comment-form textarea,
+ .form-common-btn .btn-common,
+ .single-comment-meta span,
+ .contact-post .post-meta-data span a,
+ .slider-title{
+	font-family: $Montserrat_font;
+}
+.post-style-one .post-meta-data .post-date,
+.post-style-one .post-meta-data .post-author-name,
+.widget-about-content h6,
+.category-text-box h4,
+.single-post-author .post-author-info p,
+.post-entry p,
+.navbar-nav > li > a,
+.sub-menu a,
+.slider-catagory a{
+	font-family: $Playfair_font;
+}
+
+/*------------ BORDER STYLING ------------*/
+
+.border-top{
+	border-top: 1px solid $primary_border_clr;
+}
+.border-right{
+	border-right: 1px solid $primary_border_clr;
+}
+.border-bottom{
+	border-bottom: 1px solid $primary_border_clr;
+}
+.border-left{
+	border-left: 1px solid $primary_border_clr;
+}
+
+/*------------ MAP STYLING ------------*/
+.map{
+	height: 375px;
+}

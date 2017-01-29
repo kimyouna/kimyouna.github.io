@@ -1,0 +1,22 @@
+
+/*-------------------------
+	11. About Styles
+-------------------------*/
+.about-section{
+	.custom_widget_about{
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.about-wrap{
+		.post-thumb{
+			margin-bottom: 55px;
+		}
+		.post-title{
+			text-align: center;
+		}
+		.single-blog-post{
+			padding-top: 55px;
+		}
+	}
+}

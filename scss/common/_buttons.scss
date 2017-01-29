@@ -1,0 +1,83 @@
+
+/*-------------------------
+	2 - Button Styles
+-------------------------*/
+
+.btn-one {
+	&, &:active, &:visited, &:focus {
+		background-color: $bg_red;
+		color: $white_color;
+		padding: 10px 15px 10px 25px;
+		border: 1px solid transparent;
+		border-radius: 0;
+		text-transform: uppercase;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+	}
+	&:hover{
+		border-color: $bg_blue;
+		color: $white_color;
+		background-color: $bg_blue;
+	}
+	.fa {
+		font-size: 10px;
+		margin-left: 10px;
+	}
+}
+
+.btn-two {
+	&, &:active, &:visited, &:focus {
+		background-color: transparent;
+		color: $black_color;
+		padding: 0;
+		border: 1px solid transparent;
+		border-radius: 0;
+		text-transform: uppercase;
+		font-size: 10.5px;
+		letter-spacing: 0.1em;
+	}
+	.fa {
+		font-size: 10px;
+		margin-left: 10px;
+		background-color: $bg_red;
+		color: $white_color;
+		border-radius: 50%;
+		width: 28px;
+		height: 28px;
+		text-align: center;
+		line-height: 28px;
+	}
+}
+
+.circle-icon {
+	font-size: 10px;
+	margin-left: 10px;
+	background-color: $bg_red;
+	color: $white_color;
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	.fa {
+		@include transition(0.4s);
+	}
+	&:hover {
+		color: $white_color;
+		.fa {
+			-webkit-transform: translate(3px);
+			   -moz-transform: translate(3px);
+			        transform: translate(3px);
+		}
+	}
+}
+
+.blog-btn {
+	.btn-two {
+		&:hover {
+			color: $primary_color;
+		}
+	}
+}
+
+

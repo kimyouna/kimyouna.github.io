@@ -1,0 +1,28 @@
+/*-----------------------------
+	7. Pagination Style
+-------------------------------*/
+.pagination-area{
+	margin-top: 60px;
+}
+.pagination{
+	margin: 0;
+}
+.page-numbers{
+	height: 35px;
+	width: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	color: $deep_gray;
+	margin-right: 5px;
+	border: 1px solid #d5d5d5;
+	&:hover{
+		background: $lite_blue;
+		color: $white_color;
+		border: 1px solid transparent;
+	}
+}
+.page-numbers.current{
+	background: $lite_blue;
+	color: $white_color;
+	border: 1px solid transparent;
+}

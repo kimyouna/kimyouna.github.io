@@ -1,0 +1,70 @@
+
+
+/* This css file is to over write bootstarp css
+***************************************************** /
+* Theme Name: Younger 
+* Theme URI:  http://themeforest.ne/user/codepassenger
+* Author: CodePassenger
+* Author URI: http://CodePassenger.com
+* Description:  Young - Minimal Blog Template
+* Version: 1.0.0
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Tags: html5, template, blog, personal, lifestyle, minimal
+***************************************************** /
+
+
+
+/*
+|----------------------------------------------------------------------------
+| CSS INDEX
+|----------------------------------------------------------------------------
+
+1. General Styles
+
+2. Header Styles
+
+3. Topbar Styles
+
+4. Slyder Style
+
+5. Blog Post Style
+
+6. Sidebar Style
+
+7. Pagination Style
+
+8. Single Page Style
+
+9. Instagram Widget Style
+
+10. Contact Styles
+
+11. About Styles
+
+12. Footer Styles
+
+*/
+
+@import "common/_variables";
+@import "common/_mixins";
+@import "common/_general";
+@import "_navigation";
+@import "_topbar";
+@import "_slider";
+@import "_blog_post";
+@import "_sidebar";
+@import "_pagination";
+@import "_single";
+@import "_instagram_widget";
+@import "_contact";
+@import "_about";
+@import "_footer";
+
+
+/*@import "common/_buttons";*/
+/*@import "_header";*/
+/*@import "_blog_post";*/
+
+/*@import "_footer";*/
+/*@import "_responsive";*/

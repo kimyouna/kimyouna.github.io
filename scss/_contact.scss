@@ -1,0 +1,32 @@
+/*-----------------------------
+	10. Contact Styles
+-------------------------------*/
+
+.contact-post{
+	padding-top: 55px;
+	padding-bottom: 80px;
+	.post-thumb{
+		margin-bottom: 50px;
+	}
+	text-align: center;
+	.post-meta-data{
+		margin-bottom: 40px;
+		span a{
+			font-size: 12px;
+			color: $lite_blue;
+		}
+	}
+	.post-title{
+		margin-bottom: 30px;
+	}
+	.post-entry p{
+		line-height: 32px;
+		letter-spacing: 0.8px;
+		font-size: 16px;
+		color: $deep_gray;
+		margin-bottom: 0;
+	}
+}
+.contact-form-area .form-common input[type="text"]{
+	margin-right: 125px;
+}

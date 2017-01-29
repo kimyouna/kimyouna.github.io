@@ -1,0 +1,47 @@
+/*-----------------------------
+	9. Instagram Widget Style
+-------------------------------*/
+.item-content{
+	position: relative;
+}
+.carousel-instagram .overlay-common{
+	top: 0;
+	left: 0;
+	opacity: 0;
+	@include transition(0.3s);
+}
+.carousel-instagram .instagram-info{
+	text-align: center;
+	position: absolute;
+	top: 60%;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateY(-50%);
+	@include transition(0.3s);
+}
+.carousel-instagram .instagram-info span{
+	display: block;
+	color: $white_color;
+	margin-bottom: 5px;
+}
+.carousel-instagram .instagram-info span:last-of-type{
+	margin-bottom: 0;
+}
+.carousel-instagram .owl-controls{
+	display: none;
+}
+.carousel-instagram .instagram-info span i.fa{
+	margin-left: 3px;
+}
+.carousel-instagram .item-content{
+	&:hover .overlay-common{
+		opacity: 1;
+	}
+	&:hover .instagram-info{
+		top: 50%;
+		opacity: 1;
+	}
+}

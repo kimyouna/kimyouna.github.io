@@ -1,0 +1,64 @@
+
+//FONT FAMILY 
+
+$Playfair_font : 'Playfair Display', serif;
+$Montserrat_font : 'Montserrat', sans-serif;
+$SF-UI_font : 'SF-UI', serif;
+
+$base_font_size: 13px !default;
+$secondary_font_size: 13px !default;
+$small_font_size: 12px;
+
+$base_line_height: 26px !default;
+$secondary_line_height: 25px !default;
+
+//COLOR
+
+$primary_color: #000000;
+$white_color: #fff;
+$deep_gray: #757575;
+$lite_blue: #006cff;
+$lite_blue_hvr: #0055c9;
+$yellow_color: #ff9e01;
+$gray_color: #0a0a0a;
+
+$blockquote_color: #121212;
+
+//SECTION BACKGROUND
+
+$topbar_bg: #f4f4f4;
+$body_bg: #fff;
+$footer_bg: #fff;
+$transparent_bg: transparent;
+
+//WIDGET BORDER
+$primary_border_clr: #f0f0f0;
+
+//SOCIAL
+
+$facebook_bg: #3b5998;
+$twitter_bg: #00aced;
+$google_plus_bg: #181818;
+$youtube_bg: #fe3232;
+
+$facebook_clr: #3b5998;
+$twitter_clr: #00aced;
+$google_plus_clr: #181818;
+$youtube_clr: #fe3232;
+
+//FONT WEIGHT
+
+$font_thin: 100;
+$font_light: 300;
+$font_normal: 400;
+$font_medium: 500;
+$font_semibold: 600;
+$font_bold: 700;
+$font_extra_bold: 900;
+
+//PADDING
+
+$section_padd: 60px 0;
+$section_padd_two: 55px 0 65px 0;
+$section_padd_three: 0 0 65px 0;
+$post_block_padd: 25px;
